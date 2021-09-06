@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <h1>Justus Website</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <p>___________________</p>
+    <p>Its Flask Phoenix</p>
+    <p>
+        {% for x in range(10) %}
+
+            {% if x % 2 == 1 %}
+            <p>{{x}}</p>
+
+            {% endif %}
+
+        
+        {% endfor %}
+    </p>
+</body>
+
+</html>
